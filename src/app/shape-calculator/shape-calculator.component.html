@@ -1,0 +1,27 @@
+<div class="form-container">
+  <!-- Użyj *ngIf, aby wyświetlić ten blok tylko wtedy, gdy kształtem jest "okrąg" -->
+  <div class="input-group">
+    <label for="radius">Promień:</label>
+    <input type="number" id="radius" [(ngModel)]="radius" class="input-field" />
+  </div>
+
+  <!-- Użyj *ngIf, aby wyświetlić ten blok tylko wtedy, gdy kształtem jest "kwadrat" -->
+  <div class="input-group">
+    <label for="side">Bok:</label>
+    <!-- Powiąż zmienną 'side' za pomocą [(ngModel)] -->
+    <input type="number" id="side" class="input-field" />
+  </div>
+
+  <!-- Użyj *ngIf, aby wyświetlić ten blok tylko wtedy, gdy kształtem jest "trójkąt" -->
+  <div class="input-group">
+    <label for="length">Długość:</label>
+    <!-- Powiąż zmienną 'length' za pomocą [(ngModel)] -->
+    <input type="number" id="length" class="input-field" />
+    <label for="width">Szerokość:</label>
+    <!-- Powiąż zmienną 'width' za pomocą [(ngModel)] -->
+    <input type="number" id="width" class="input-field" />
+  </div>
+
+  <!-- Wywołanie funkcji calculate() po kliknięciu przycisku -->
+  <button class="calculate-button">Oblicz</button>
+</div>
